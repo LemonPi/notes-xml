@@ -1,8 +1,21 @@
 -----------------------------------------------------------
+    Types
+-----------------------------------------------------------
+- XML declaration
+- References
+- tags & elements
+- attributes
+- text
+
+
+-----------------------------------------------------------
     Declaration
 -----------------------------------------------------------
 - first line of document must have XML declaration
 - declares the version of the XML
+- optionally declares encoding
+	eg. encoding="UTF-8"
+	- will be overwritten by HTTP protocol
 <?xml version="1.0"?>
 
 -----------------------------------------------------------
