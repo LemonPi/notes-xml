@@ -1,0 +1,30 @@
+-----------------------------------------------------------
+    Declaration
+-----------------------------------------------------------
+- first line of document must have XML declaration
+- declares the version of the XML
+<?xml version="1.0"?>
+
+-----------------------------------------------------------
+    Elements and closing tags
+-----------------------------------------------------------
+- there is only 1 root tag
+	- all other elements must be nested in this element
+- all elements must have closing tags
+- all new elements before an element is closed are children of that element
+	- all children must be closed before their parent and siblings
+- tags are case sensitive
+<root>
+	<child>
+		<subchild>
+		</subchild>
+	</child>
+</root>
+
+-----------------------------------------------------------
+    Attributes
+-----------------------------------------------------------
+- elements can have attributes in name/value pairs
+- name is never quoted
+- value must be quoted
+<note date="12/11/99">
