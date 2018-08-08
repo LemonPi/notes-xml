@@ -1,0 +1,49 @@
+-----------------------------------------------------------
+    DTDs
+-----------------------------------------------------------
+- describe XML language
+- check voculary and validity
+- can be inside document or as a separate file
+
+-----------------------------------------------------------
+    Syntax
+-----------------------------------------------------------
+<!DOCTYPE root DTDID [
+	declaration1
+	declaration2
+	...
+]>
+- starts with <!DOCTYPE
+- root is the name of the root element
+- DTDID is an optional identifier for DTD
+	- path to file or URL
+- declarations inside [ ] make it a internal DTD
+	- need to specify standalone="yes" in declaration
+
+-----------------------------------------------------------
+    Internal DTD body
+-----------------------------------------------------------
+<!ELEMENT address (name,company,phone)>
+<!ELEMENT name (#PCDATA)>
+- start with !ELEMENT
+- #PCDATA is parsable text data
+
+-----------------------------------------------------------
+    External DTD
+-----------------------------------------------------------
+<!DOCTYPE address SYSTEM "address.dtd">
+- refer to .dtd file or URL
+- need to specify standalone="no" in declaration
+- content of .dtd file is just DTD body (sequence of <!ELEMENT>)
+- can be private or public
+	- private DTDs use <!DOCTYPE root_element SYSTEM "DTD_location">
+	- public DTDs use <!DOCTYPE root_element PUBLIC "DTD_name" "DTD_location">
+		- DTD_name format "prefix//owner_of_the_DTD//description_of_the_DTD//ISO 639_language_identifier"
+		eg. "-//W3C//DTD HTML 4.0 Transitional//EN"
+			- prefixes allowed
+				ISO = ISO standard (auto approved)
+				+ = approved non-ISO standard
+				- = unapproved
+- can combine internal and external DTD
+	- internal DTD overrides external DTD
+	- can't define ELEMENT with same name
