@@ -1,0 +1,10 @@
+-----------------------------------------------------------
+    CDATA
+-----------------------------------------------------------
+- character data
+- blocks of text that are not parsed by the parser as markup (raw characters)
+- can't contain the string "]]>"
+- no nesting
+<![CDATA[
+	characters
+]]>
