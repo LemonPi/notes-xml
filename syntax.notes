@@ -80,3 +80,8 @@
 	& (&amp;)
 	' (&apos;)
 	" (&quot;)
+- comments 
+	<!--comment-->
+	- can't be before XML declaration
+	- can't exist inside attribute value
+	- can't be nested inside other comments
