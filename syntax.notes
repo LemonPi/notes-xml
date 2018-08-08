@@ -60,4 +60,15 @@
 	- character reference
 		- hash mark followed by a number for unicode code of a character
 		eg. &#65;
-		
+
+-----------------------------------------------------------
+    Text
+-----------------------------------------------------------
+- save as UTF-8 or UTF-16 to avoid encoding issues
+- whitespace between elements and attributes are ignored
+- reserved characters and their reference replacements
+	< (&lt;)
+	> (&gt;)
+	& (&amp;)
+	' (&apos;)
+	" (&quot;)
