@@ -1,0 +1,9 @@
+-----------------------------------------------------------
+    PIs
+-----------------------------------------------------------
+<?target instructions?>
+- starts with <?
+- ends with ?>
+- does not contain character data of document
+- passed to applications
+- can occur anywhere outside the markup
