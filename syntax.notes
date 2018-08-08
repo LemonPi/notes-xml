@@ -46,3 +46,18 @@
 - name is never quoted
 - value must be quoted
 <note date="12/11/99">
+
+-----------------------------------------------------------
+    References
+-----------------------------------------------------------
+- adds additional text or markup
+- begin with &
+- end with ;
+- 2 types
+	- entity reference
+		- name between start and end delimiters
+		eg. &amp;
+	- character reference
+		- hash mark followed by a number for unicode code of a character
+		eg. &#65;
+		
