@@ -1,0 +1,16 @@
+-----------------------------------------------------------
+    XML overview
+-----------------------------------------------------------
+- Extensible Markup Language
+- markup language like HTML
+- designed to describe data
+- tags are user defined
+- DTD (#Document Type Definition#) to formally describe the data
+
+-----------------------------------------------------------
+    Difference with HTML
+-----------------------------------------------------------
+- XML describes data, HTML displays data
+- HTML documents can only contain predefined HTML tags, XML allows users to define own tags
+
+
