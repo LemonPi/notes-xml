@@ -26,7 +26,13 @@
 - all elements must have closing tags
 - all new elements before an element is closed are children of that element
 	- all children must be closed before their parent and siblings
-- tags are case sensitive
+- can have empty tag
+	- no content
+	- optionally can omit opening tag
+	<name attribute />
+	<name attribute></name>
+- tag names are case sensitive
+	- name can include {-, _, .} as punctuation
 <root>
 	<child>
 		<subchild>
@@ -65,6 +71,8 @@
     Text
 -----------------------------------------------------------
 - save as UTF-8 or UTF-16 to avoid encoding issues
+	- specify in declaration as encoding attribute
+	- UTF-8 is default
 - whitespace between elements and attributes are ignored
 - reserved characters and their reference replacements
 	< (&lt;)
