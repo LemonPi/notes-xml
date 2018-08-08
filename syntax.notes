@@ -25,6 +25,11 @@
     Attributes
 -----------------------------------------------------------
 - elements can have attributes in name/value pairs
+- attributes provide additional information about elements
+- they are always contained in the start tag of the element
+- information in attributes can be expressed as child elements
+	- sequence of information can only be expressed as child elements
+	- generally avoid using attributes if the information is important to the reader
 - name is never quoted
 - value must be quoted
 <note date="12/11/99">
